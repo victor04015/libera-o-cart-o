@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>liberação de Cartão de Crédito</title>
+  <style>
+body {
+            background: linear-gradient(to bottom, #5cb85c, #8bd38b);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .negrito{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Liberação de Cartão de Crédito</h1>
+
+  <div class="form-group">
+    <label for="cpf">Número do Cartão:</label>
+    <input type="text" id="cpf" placeholder="Digite o CPF">
+  </div>
+  <P>Taxa de Liberação R$219,00</P>
+  <P class="negrito">OBS: A liberação será feita apenas mediante pagamento da taxa!</P>
+  <button onclick="confirmarPagamento()">Aprovar</button>
+  <p id="confirmacaoPagamento"></p>
+</div>
+
+<script>
+  function confirmarPagamento() {
+    document.getElementById('confirmacaoPagamento').innerHTML = 'Prazo de alteração 3-5 dias úteis!';
+  }
+</script>
+
+</body>
+</html>
